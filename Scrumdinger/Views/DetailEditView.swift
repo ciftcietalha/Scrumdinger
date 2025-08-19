@@ -1,10 +1,8 @@
 import SwiftUI
 
-
 struct DetailEditView: View {
     @Binding var scrum: DailyScrum
     @State private var attendeeName = ""
-
 
     var body: some View {
         Form {
@@ -14,10 +12,10 @@ struct DetailEditView: View {
                     Slider(value: $scrum.lengthInMinutesAsDouble, in: 5...30, step: 1) {
                         Text("Length")
                     }
-                    .accessibilityValue(Text("\(scrum.lengthInMinutes) minutes"))
+                    .accessibilityValue("\(scrum.lengthInMinutes) minutes")
                     Spacer()
                     Text("\(scrum.lengthInMinutes) minutes")
-                        .accessibility(hidden: true)
+                        .accessibilityHidden(true)
                 }
                 ThemePicker(selection: $scrum.theme)
             }
@@ -30,7 +28,7 @@ struct DetailEditView: View {
                 }
                 HStack {
                     TextField("New Attendee", text: $attendeeName)
-                    Button(action:{
+                    Button(action: {
                         withAnimation {
                             let attendee = DailyScrum.Attendee(name: attendeeName)
                             scrum.attendees.append(attendee)
@@ -38,7 +36,7 @@ struct DetailEditView: View {
                         }
                     }) {
                         Image(systemName: "plus.circle.fill")
-                            .accessibilityLabel(Text("Add Attendee"))
+                            .accessibilityLabel("Add attendee")
                     }
                     .disabled(attendeeName.isEmpty)
                 }
@@ -46,7 +44,6 @@ struct DetailEditView: View {
         }
     }
 }
-
 
 #Preview {
     @Previewable @State var scrum = DailyScrum.sampleData[0]

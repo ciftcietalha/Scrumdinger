@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		A22C2AED2E388BF5000DCD7B /* ThemeKit in Frameworks */ = {isa = PBXBuildFile; productRef = A22C2AEC2E388BF5000DCD7B /* ThemeKit */; };
 		A2B944EF2E50731400086A9F /* ThemeKit in Frameworks */ = {isa = PBXBuildFile; productRef = A2B944EE2E50731400086A9F /* ThemeKit */; };
+		A2C9F8A42E54778B00EDB730 /* ThemeKit in Frameworks */ = {isa = PBXBuildFile; productRef = A2C9F8A32E54778B00EDB730 /* ThemeKit */; };
+		A2C9F8A72E5477F800EDB730 /* TimerKit in Frameworks */ = {isa = PBXBuildFile; productRef = A2C9F8A62E5477F800EDB730 /* TimerKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,7 +65,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A22C2AED2E388BF5000DCD7B /* ThemeKit in Frameworks */,
+				A2C9F8A72E5477F800EDB730 /* TimerKit in Frameworks */,
 				A2B944EF2E50731400086A9F /* ThemeKit in Frameworks */,
+				A2C9F8A42E54778B00EDB730 /* ThemeKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,6 +132,8 @@
 			packageProductDependencies = (
 				A22C2AEC2E388BF5000DCD7B /* ThemeKit */,
 				A2B944EE2E50731400086A9F /* ThemeKit */,
+				A2C9F8A32E54778B00EDB730 /* ThemeKit */,
+				A2C9F8A62E5477F800EDB730 /* TimerKit */,
 			);
 			productName = Scrumdinger;
 			productReference = A2E698392E361D90001CC3C5 /* Scrumdinger.app */;
@@ -214,6 +220,7 @@
 			packageReferences = (
 				A2B944EB2E506FE300086A9F /* XCRemoteSwiftPackageReference "swift-algorithms" */,
 				A2B944ED2E50731400086A9F /* XCLocalSwiftPackageReference "ThemeKit" */,
+				A2C9F8A52E5477F800EDB730 /* XCLocalSwiftPackageReference "TimerKit" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = A2E6983A2E361D90001CC3C5 /* Products */;
@@ -584,6 +591,10 @@
 			isa = XCLocalSwiftPackageReference;
 			relativePath = ThemeKit;
 		};
+		A2C9F8A52E5477F800EDB730 /* XCLocalSwiftPackageReference "TimerKit" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = TimerKit;
+		};
 /* End XCLocalSwiftPackageReference section */
 
 /* Begin XCRemoteSwiftPackageReference section */
@@ -605,6 +616,14 @@
 		A2B944EE2E50731400086A9F /* ThemeKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = ThemeKit;
+		};
+		A2C9F8A32E54778B00EDB730 /* ThemeKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ThemeKit;
+		};
+		A2C9F8A62E5477F800EDB730 /* TimerKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TimerKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

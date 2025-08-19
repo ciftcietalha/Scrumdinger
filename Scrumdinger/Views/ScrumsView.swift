@@ -23,6 +23,6 @@ struct ScrumsView: View {
 }
 
 #Preview {
-    @Previewable @State var scrum = DailyScrum.sampleData
-    ScrumsView(scrums: $scrum)
+    @Previewable @State var scrums = DailyScrum.sampleData
+    ScrumsView(scrums: $scrums)
 }

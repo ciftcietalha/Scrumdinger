@@ -1,7 +1,6 @@
 import SwiftUI
 import ThemeKit
 
-
 struct ThemePicker: View {
     @Binding var selection: Theme
     
@@ -15,7 +14,6 @@ struct ThemePicker: View {
         .pickerStyle(.navigationLink)
     }
 }
-
 
 #Preview {
     @Previewable @State var theme = Theme.periwinkle

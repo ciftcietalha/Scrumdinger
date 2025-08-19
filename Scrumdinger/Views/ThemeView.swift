@@ -14,7 +14,6 @@ struct ThemeView: View {
     }
 }
 
-
 #Preview {
     ThemeView(theme: .buttercup)
 }
