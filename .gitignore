@@ -1,0 +1,10 @@
+Scrumdinger.xcodeproj/project.xcworkspace/xcuserdata/
+*.xcuserstate
+.DS_Store
+Scrumdinger/.DS_Store
+Scrumdinger.xcodeproj/project.xcworkspace/xcuserdata/
+*.xcuserstate
+Scrumdinger.xcodeproj/xcuserdata/
+*.xcscheme
+*.xcschememanagement.plist
+.DS_Store
