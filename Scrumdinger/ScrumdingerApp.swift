@@ -9,5 +9,6 @@ struct ScrumdingerApp: App {
             ScrumsView()
         }
         .modelContainer(for:DailyScrum.self)
+        
     }
 }
