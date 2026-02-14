@@ -1,8 +1,10 @@
 import SwiftUI
 import SwiftData
 
+
 struct DetailView: View {
     let scrum: DailyScrum
+
 
     @State private var isPresentingEditView = false
     @State private var errorWrapper: ErrorWrapper?
@@ -42,9 +44,11 @@ struct DetailView: View {
                     Label("No meetings yet", systemImage: "calendar.badge.exclamationmark")
                 }
                 ForEach(scrum.history) { history in
-                    HStack {
-                        Image(systemName: "calendar")
-                        Text(history.date, style: .date)
+                    NavigationLink(destination: HistoryView(history: history)) {
+                        HStack {
+                            Image(systemName: "calendar")
+                            Text(history.date, style: .date)
+                        }
                     }
                 }
             }
@@ -66,6 +70,7 @@ struct DetailView: View {
         }
     }
 }
+
 
 #Preview(traits: .dailyScrumsSampleData) {
     @Previewable @Query(sort: \DailyScrum.title) var scrums: [DailyScrum]
